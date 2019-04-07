@@ -1,0 +1,24 @@
+{
+  "name": "@zuber/js-helpers",
+  "version": "1.0.0",
+  "description": "js helpers functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuber1077/js-helpers.git"
+  },
+  "keywords": [
+    "utils",
+    "js-validators",
+    "js-helpers"
+  ],
+  "author": "zuber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zuber1077/js-helpers/issues"
+  },
+  "homepage": "https://github.com/zuber1077/js-helpers#readme"
+}
