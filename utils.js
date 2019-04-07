@@ -134,7 +134,7 @@ export const scrollTop = function (el, from = 0, to, duration = 500, callback) {
   const difference = Math.abs(from - to);
   const step = Math.ceil(difference / duration * 50);
 
-  export function scroll(start, end, step) {
+  function scroll(start, end, step) {
       if (start === end) {
           typeof callback === 'function' && callback();
           return;

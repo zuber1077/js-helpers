@@ -1,3 +1,5 @@
+export const isBrowser = typeof window !== "undefined";
+
 export const isMobile = value => {
   value = value.replace(/[^-|\d]/g, '')
   return (
@@ -5,10 +7,10 @@ export const isMobile = value => {
   )
 }
 
-export const isIOS = !!(navigator && navigator.userAgent || '').match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+export const isIOS = isBrowser ? !!(navigator && navigator.userAgent || '').match(/\(i[^;]+;( U;)? CPU.+Mac OS X/) : null;
 
 export function isAndroid() {
-  return  /android/.test(navigator.userAgent.toLowerCase());
+  return isBrowser ? /android/.test(navigator.userAgent.toLowerCase()) : null;
 }
 
 export const isObj = x => {
