@@ -1,4 +1,4 @@
-// import { isIOS, addClass, removeClass } from './validators'
+import { isIOS, addClass, removeClass } from './validators'
 export const debounce = (func, delay = 200) => {
   let timer = null
 
